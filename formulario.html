@@ -13,18 +13,31 @@
     <progress id="progresso" max="100" value="20">20%</progress>
 
     <form action="formulario.html" method="post">
-        <!--Inserir label-->
-    Data de nascimento: <input type="date" name="calendário">
-    Email: <input type="email" id="e-mail" name="email">
-    Telefone: <input type="tel" id="telefone" placeholder="(99) 99999-9999">
-    Mês de Adesão: <input type="month" id="mês" name="mes">
-    Quantos filmes você pretende assiste semanalmente: <input type="number" id="numero" min="0" max="7">
-    Escolha a cor da sua área de trabalho: <input type="color" id="cor" name="cores">
-    Endereço da página pessoal do cliente: <input type=”url” name="urlComBr" id="urlComBr"
+
+    <label>Data de nascimento: <input type="date" name="calendário"></label>
+    
+    <label for="e-mail">E-mail: </label> 
+    <input type="email" id="e-mail" name="email">
+    
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+    
+    <label for="mês">Mês de Adesão: </label>
+    <input type="month" id="mês" name="mes">
+    
+    <label for="numero">Quantos filmes você pretende assistir semanalmente? </label> 
+    <input type="number" id="numero" min="0" max="7">
+    
+    <label for="cor">Escolha a cor da sua área de trabalho: </label> 
+    <input type="color" id="cor" name="cores">
+    
+    <label for="urlComBr">Endereço da sua página pessoal: </label> 
+    <input type="url" name="urlComBr" id="urlComBr"
     placeholder="http://endereco.com.br"
     pattern=".+\.com.br" required>
-    Insira a data e hora que prefere utilizar o cupom de desconto da primeira compra: <input type="datetime-local" id="data" name="data" >
-    Selecione os gêneros da sua preferência: <input type="checkbox" id="genero1" name="genero1" value="Ação">
+    
+    <label for="data">Insira a data e hora que prefere utilizar o cupom de desconto da primeira compra: </label> <input type="datetime-local" id="data" name="data" >
+    <label>Selecione os gêneros da sua preferência: </label>
     <input type="checkbox" id="genero1" name="genero1" value="Ação">
     <label for="gênero1"> Ação</label><br>
     <input type="checkbox" id="genero2" name="genero2" value="Drama">
